@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Practice CSS</title>
+    <style>
+      /* Apply to all elements */
+      * {
+        box-sizing: border-box;
+        /*box-sizing is how the total width and height of an element is calculated.
+         Read more https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4rem;
+      }
+      .container {
+        max-width: 960px;
+        margin: auto;
+      }
+      .box {
+        background: #f4f4f4;
+        border: 2px solid black;
+        padding: 1rem;
+        margin-bottom: 0.4rem;
+      }
+      .box p {
+        /* text-align: center; */
+        text-align: justify;
+      }
+      #box-2 {
+        float: left;
+        width: 69%
+      }
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+      #box-4 {
+        clear: both;/*Classic way to clear float from previus stuff*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div id="box-1" class="box">
+          <h3>Heading 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate deserunt quae voluptatum consectetur necessitatibus qui vitae iusto similique corrupti provident voluptatibus, voluptatem inventore repudiandae repellendus neque ex beatae mollitia nulla!</p>
+        </div>
+        <div id="box-2" class="box">
+          <h3>Heading 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate deserunt quae voluptatum consectetur necessitatibus qui vitae iusto similique corrupti provident voluptatibus, voluptatem inventore repudiandae repellendus neque ex beatae mollitia nulla!</p>
+        </div>
+        <div id="box-3" class="box">
+          <h3>Heading 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate deserunt quae voluptatum consectetur necessitatibus qui vitae iusto similique corrupti provident voluptatibus, voluptatem inventore repudiandae repellendus neque ex beatae mollitia nulla!</p>
+        </div>
+        <div id="box-4" class="box">
+          <h3>Heading 4</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate deserunt quae voluptatum consectetur necessitatibus qui vitae iusto similique corrupti provident voluptatibus, voluptatem inventore repudiandae repellendus neque ex beatae mollitia nulla!</p>
+        </div>
+    </div>
+  </body>
+</html>
