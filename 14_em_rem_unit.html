@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Practice CSS</title>
+    <style>
+       /* 1 em = font size of parent element */
+       #box-1 {
+         font-size: 20px;
+       }
+       #box-1 p {
+         font-size: 1.5em;/* 20 x 1.5 = 30px */
+         padding: 1em;/* นึกว่าจะ 20 แต่ดันเป็น 30 (จากค่าคูณตัวเอง) x 1 = 30px */
+       }
+       #box-1 ul {
+         font-size: 1.2em;/* Magic ตรง 3.1-3.3 ใหญ่กว่า 3 เพราะจะคำนวน 1.2 จาก parent มา 2 ทอด */
+       }
+       /* 1 rem = font size of root element, default = 16 px 
+          ปรับ browser font size จะส่งผลกับ rem (แต่ em ไม่เป็นอะไร, ถ้า parent set font-size ไว้) */
+       #box-2 p {
+         font-size: 2rem;
+         line-height: 1.7rem/* 16 x 1.7 = 27.2, ไม่ Magic เหมือน em ที่คิดจากค่าคูณตัวเอง */
+       }
+    </style>
+  </head>
+  <body>
+    <div id="box-1">
+      <h3>Box One</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+        recusandae nesciunt sapiente aut blanditiis. Reiciendis adipisci,
+        voluptas animi provident iure nemo, facilis fugit, praesentium ut nisi
+        est dolores at qui.
+      </p>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3
+          <ul>
+            <li>3.1</li>
+            <li>3.2</li>
+            <li>3.3</li>
+          </ul>
+        </li>
+        <li>4</li>
+      </ul>
+    </div>
+    <div id="box-2">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+        recusandae nesciunt sapiente aut blanditiis. Reiciendis adipisci,
+        voluptas animi provident iure nemo, facilis fugit, praesentium ut nisi
+        est dolores at qui.
+      </p>
+    </div>
+  </body>
+</html>

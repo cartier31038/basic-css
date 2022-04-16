@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Practice CSS</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        background-color: #ccc;
+      }
+      li {
+        /* Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element
+          https://www.w3schools.com/css/css_inline-block.asp#:~:text=The%20display%3A%20inline%2Dblock%20Value,display%3A%20inline%20they%20are%20not.*/
+        display: inline-block;
+        padding: 10px 10px;
+      }
+      img {
+        display: block;
+        width: 100px;
+        margin: auto;/*Display inline can't use margin auto*/
+      }
+      .box {
+        box-sizing: border-box;
+        width: calc(32.8%);
+        display: inline-block;
+        background-color: #ccc;
+        padding: 20px;
+        margin: 0 0 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+    <br>
+    <img src="/images/dota2.jpeg" alt="DOTA2">
+    <img src="/images/dota2.jpeg" alt="DOTA2">
+    <br>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ab, veniam, reiciendis officiis natus, itaque corporis iusto rerum fugit consectetur veritatis in fuga quibusdam quas ipsum error eveniet ex explicabo!</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ab, veniam, reiciendis officiis natus, itaque corporis iusto rerum fugit consectetur veritatis in fuga quibusdam quas ipsum error eveniet ex explicabo!</p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ab, veniam, reiciendis officiis natus, itaque corporis iusto rerum fugit consectetur veritatis in fuga quibusdam quas ipsum error eveniet ex explicabo!</p>
+    </div>
+  </body>
+</html>
