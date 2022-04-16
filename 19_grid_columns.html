@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Practice CSS</title>
+    <style>
+      .grid {
+        display: grid;
+        /* grid-template-columns: auto auto auto; */
+        /* grid-template-columns: repeat(3, auto); */ /* Similar with upper */
+        grid-template-columns: 1fr 2fr 2fr;
+        gap: 1rem;
+      }
+      .item {
+        padding: 3rem;
+        border: 1px solid #ccc;
+        background-color: #f4f4f4;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+    <main>
+      <section>
+        <h3>Hello World</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum in
+          rem perferendis reprehenderit nam commodi corporis consequatur dicta
+          necessitatibus, vitae suscipit, quos quo fugit veniam rerum ipsam
+          omnis officia minima.
+        </p>
+      </section>
+      <aside>
+        <h3>Menu</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+          ab nobis voluptatum porro optio aperiam eaque. Praesentium nesciunt id
+          porro placeat debitis labore, est obcaecati libero vel maxime veniam
+          nihil.
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>
