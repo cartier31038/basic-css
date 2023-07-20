@@ -25,20 +25,30 @@
         padding: 10px;
         text-align: center;
         border-radius: 10px;
-        /*Shorthand: grow, shrink, basis*/
-        flex: 1 0 200px;
+        /*Shorthand: {grow}, {shrink}, {basis}
+        a.k.a.: {min}, {max}, {ideal size}
+        Default: 0 1 auto*/
+        flex: 0 1 auto;
       }
-      /* .item-1 {
-        flex-shrink: 0;
+      .item-1 {
+        /* flex-grow: 1; */
+        flex-shrink: 1;
+        flex-basis: auto;
       }
       .item-2 {
-        flex-grow: 1;
-        flex-basis: 0;
+        /* 2 เท่าของคนอื่น */
+        flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: auto;
       }
       .item-3 {
-        flex-grow: 2;
-        flex-basis: 0;
-      } */
+        flex-grow: 1;
+        /* 0 = ไม่ยอมลด size แม้จอเล็กมาก */
+        flex-shrink: 0; 
+        /* flex-basis: auto; */
+        /* ไม่มีผลถ้าเจอ flex grow > 0 เพื่อ fill พ่อ */
+        flex-basis: 500px; 
+      }
     </style>
   </head>
   <body>
